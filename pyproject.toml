@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dnsup"
+authors = [{name = "NuclearPine", email = "nuclearpine.h3nbw@aleeas.com"}]
+description = "Simple script to update Cloudflare DNS records"
+license = {file = LICENSE}
+
+version = "1.0"
+requires-python = ">=3.8"
+dependencies = [
+    "requests"
+]
+
+[project.scripts]
+dnsup = "dnsup:main"
